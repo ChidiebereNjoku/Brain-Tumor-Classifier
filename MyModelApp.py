@@ -7,12 +7,10 @@ from tensorflow.keras.models import load_model
 import matplotlib.pyplot as plt
 
 # Load the model
-model_path = r"C:\Users\USER\Desktop\BT\CnnImagemodel.h5"
-encoder_path = r"C:\Users\USER\Desktop\BT\encoder.sav"
-loaded_model = load_model(model_path,compile=False)
+loaded_model = load_model("CnnImagemodel.h5",compile=False)
 
 # Load the encoder
-with open(encoder_path, 'rb') as file:
+with open("encoder.sav", 'rb') as file:
     encoder = pickle.load(file)
 
 def classifier(uploaded_file):
