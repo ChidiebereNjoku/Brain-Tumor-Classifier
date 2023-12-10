@@ -1,0 +1,9 @@
+streamlit==1.8.0
+scikit-learn==0.24.2
+opencv-python-headless
+mesa
+numpy==1.19.5
+requests==2.26.0
+tensorflow>=2.5.0
+protobuf<3.20,>=3.9.2
+
